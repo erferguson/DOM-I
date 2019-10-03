@@ -92,3 +92,42 @@ newMainP[4].textContent = siteContent['main-content']['vision-content'];
 let newMainIMG = document.getElementById('middle-img'); // SELECTED
 newMainIMG.src = siteContent['main-content']['middle-img-src'];
 
+// CONTACT - H4
+let newContactH4 = document.querySelector('.contact h4'); 
+
+  newContactH4.textContent = siteContent['contact']['contact-h4'];
+
+  // CONTACT - p
+  let newContactP = document.querySelectorAll('.contact p');
+
+  newContactP[0].textContent = siteContent['contact']['address'];
+  newContactP[1].textContent = siteContent['contact']['phone'];
+  newContactP[2].textContent = siteContent['contact']['email'];
+
+  //FOOTER
+let newFooter = document.querySelector('footer p'); // SELECTED
+
+newFooter.textContent = siteContent['footer']['copyright'];
+
+//NAV to GREEN
+navLinks.forEach(function(currentValue){
+  currentValue.style.color = 'green';
+});
+
+// -- `.appendChild()` -- // 
+const newNav = document.querySelector('nav');
+
+  newNavLink = document.createElement('a');
+  newNavLink.textContent = "Support";
+  newNavLink.style.color = "crimson";
+
+  newNav.append(newNavLink);
+
+// `.prepend()`
+  const newNav2 = document.querySelector('nav');
+
+  newNavLink = document.createElement('a');
+  newNavLink.textContent = "Preamble";
+  newNavLink.style.color = "navy";
+
+  newNav.prepend(newNavLink);
