@@ -42,6 +42,8 @@ let logo = document.getElementById("logo-img");
 
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+
+
 //Navigation
 let navLinks = document.querySelectorAll("a")
 
@@ -52,3 +54,20 @@ navLinks[3].textContent = siteContent['nav']['nav-item-4'];
 navLinks[4].textContent = siteContent['nav']['nav-item-5'];
 navLinks[5].textContent = siteContent['nav']['nav-item-6'];
 
+//CTA - text 
+let newText = document.querySelector(".cta-text h1")
+
+newText.textContent = siteContent['cta']['h1'];
+
+//CTA - button
+let newButton = document.querySelector('.cta-text button')
+
+newButton.textContent = siteContent['cta']['button']
+
+//CTA - image
+let newImage = document.getElementById('cta-img')
+
+newImage.src = siteContent['cta']['img-src']
+
+// let newIMG = document.getElementById('logo-img'); // SELECTED
+// newIMG.src = siteContent['cta']['img-src'];
