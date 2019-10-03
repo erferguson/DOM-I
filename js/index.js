@@ -69,5 +69,26 @@ let newImage = document.getElementById('cta-img')
 
 newImage.src = siteContent['cta']['img-src']
 
-// let newIMG = document.getElementById('logo-img'); // SELECTED
-// newIMG.src = siteContent['cta']['img-src'];
+//MAIN CONTENT - header
+let newMainText = document.querySelectorAll(".main-content h4"); // SELECTED
+
+newMainText[0].textContent = siteContent['main-content']['features-h4']
+newMainText[1].textContent = siteContent ['main-content']['about-h4']
+newMainText[2].textContent = siteContent['main-content']['services-h4']
+newMainText[3].textContent = siteContent ['main-content']['product-h4']
+newMainText[4].textContent = siteContent['main-content']['vision-h4']
+
+
+//MAIN CONTENT - p
+let newMainP = document.querySelectorAll(".main-content p");
+
+newMainP[0].textContent = siteContent['main-content']['features-content'];
+newMainP[1].textContent = siteContent['main-content']['about-content'];
+newMainP[2].textContent = siteContent['main-content']['services-content'];
+newMainP[3].textContent = siteContent['main-content']['product-content'];
+newMainP[4].textContent = siteContent['main-content']['vision-content'];
+
+//MAIN CONTENT - img
+let newMainIMG = document.getElementById('middle-img'); // SELECTED
+newMainIMG.src = siteContent['main-content']['middle-img-src'];
+
